@@ -4,9 +4,10 @@
     margin: 0;
 }
 :root{
-    --sidebar-color: #93D1F3;
+    --sidebar-color: #6eef47;
     --header-color: #ef476f;
-    --main-content-color: #de985e;
+    --main-content-color: #4798ef;
+    --additional-color: #ef8847;
 }
 html{
     height: 100vh;
@@ -31,7 +32,7 @@ html{
     grid-column: 2 / -1;
     background-color: var(--header-color);
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: 1fr 1fr;
     padding: 20px;
 }
@@ -39,7 +40,7 @@ html{
     display: flex;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     padding-left: 10px;
     grid-row: 1 / 2;
@@ -47,10 +48,10 @@ html{
 }
 label img{
     height: 2rem;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 .header .upper-right{
-    padding-right: 15px;
+    margin-right: 25px;
     display: flex;
     justify-content: flex-end;
     align-self: center;
@@ -59,7 +60,7 @@ label img{
     grid-column: 2 / 3;
 }
 .upper-right img{
-    background-color: white;
+    background-color: var(--additional-color);
     border: 3px solid black;
     border-radius: 50%;
     margin-right: 10px;
@@ -67,28 +68,35 @@ label img{
 .header .lower-left{
     display: flex;
     justify-content: flex-start;
-    height: 100px;
+    height: 80px;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
 }
 .lower-left img{
     border: 3px solid black;
-    background-color: white;
+    background-color: var(--additional-color);
     border-radius: 50%;
+    margin-right: 20px;
+}
+.lower-left div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.name{
+    font-size: 1.5rem;
+    text-shadow: 1px 0 black;
 }
 .header .lower-right{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2rem;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    margin-right: 20%;
 }
-.header .lower-right ul{
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 /* Sidebar */
 
@@ -170,13 +178,15 @@ label img{
     background: none;
     cursor: pointer;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .headerBtn{
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
+    background-color: var(--sidebar-color);
+    border-radius: 20px;
+    width: 5rem;
+    height: 2rem;
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -185,9 +195,8 @@ label img{
 
 
 input[type="search"]{
-    background-color: lightcyan;
     padding: 10px;
-    width: 80%;
+    width: 100%;
     height: 2rem;
     border-radius: 15px;
 }
