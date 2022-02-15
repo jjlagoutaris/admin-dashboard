@@ -8,37 +8,94 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="admin-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+
+
         <div class="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-icon">
-                    <img src="main-icon.png" alt="main">
+                    <img src="airplane.gif" alt="rocket gif">
                 </div>
                 <div class="sidebar-title">
                     Dashboard
                 </div>
             </div>
             <div class="sidebar-main-menu">
-                <button class="btn"><i class="fa fa-home"></i> Home</button>
-                <button class="btn"><i class="fa fa-user"></i> Profile</button>
-                <button class="btn"><i class="fa fa-comments"></i> DMs</button>
-                <button class="btn"><i class="fa fa-history"></i> History</button>
-                <button class="btn"><i class="fa fa-tasks"></i> Tasks</button>
-                <button class="btn"><i class="fa fa-user-plus"></i> Groups</button>
+                <button class="btn menu"><i class="fa fa-home fa-lg"></i><span class="btn-text">Home</span></button>
+                <button class="btn menu"><i class="fa fa-user fa-lg"></i> <span class="btn-text">Profile</span></button>
+                <button class="btn menu"><i class="fa fa-comments fa-lg"></i> <span class="btn-text">DMs</span></button>
+                <button class="btn menu"><i class="fa fa-history fa-lg"></i> <span class="btn-text">History</span></button>
+                <button class="btn menu"><i class="fa fa-tasks fa-lg"></i> <span class="btn-text">Tasks</span></button>
+                <button class="btn menu"><i class="fa fa-user-plus fa-lg"></i> <span class="btn-text">Groups</span></button>
             </div>
             <div class="sidebar-miscellaneous-menu">
-                <button class="btn"><i class="fa fa-bars"></i> Settings</button>
-                <button class="btn"><i class="fa fa-envelope-open"></i> Support</button>
-                <button class="btn"><i class="fa fa-lock"></i> Privacy</button>
+                <button class="btn menu"><i class="fa fa-gear fa-lg"></i> <span class="btn-text">Settings</span></button>
+                <button class="btn menu"><i class="fa fa-question fa-lg"></i> <span class="btn-text">Support</span></button>
+                <button class="btn menu"><i class="fa fa-lock fa-lg"></i> <span class="btn-text">Privacy</span></button>
             </div>
         </div>
+
+
         <div class="header">
-
+            <div class="upper-left">
+                <input type="search" name="searchbar" id="searchbar" placeholder="Cute doggos">
+                <label for="searchbar">
+                    <img src="search.svg" alt="search icon">
+                </label>
+            </div>
+            <div class="upper-right">
+                <button class="btn header"><i class="fa fa-bell fa-lg"></i></button>
+                <img src="cartoon-plane.svg" alt="profile-pic-mini">
+                <button class="profile-name">John Lagoutaris</button>
+            </div>
+            <div class="lower-left">
+                <img src="cartoon-plane.svg" alt="profile-pic-reg">
+                <div>
+                    <span class="greeting">Hi there,</span>
+                    <span class="name username">
+                        John Lagoutaris (@johnlagoutaris) 
+                    </span>
+                </div>
+            </div>
+            <div class="lower-right">
+                <ul class="header-buttons">
+                    <li>
+                        <button class="headerBtn">
+                            New
+                        </button>
+                    </li>
+                    <li>
+                        <button class="headerBtn">
+                            Upload
+                        </button>
+                    </li>
+                    <li>
+                        <button class="headerBtn">
+                            Share
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="main-content">
 
+
+        <div class="main-content">
+            <div class="projects">
+
+            </div>
+            <div class="announcements-and-trending">
+                <div class="announcements">
+
+                </div>
+                <div class="trending">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </body>
