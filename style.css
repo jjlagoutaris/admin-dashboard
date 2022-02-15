@@ -12,9 +12,12 @@ html{
     height: 100vh;
     width: 100vw;
 }
+
+/* Main sections */
+
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
 }
 .header{
@@ -27,9 +30,54 @@ html{
     grid-column: 1 / 2;
     background-color: var(--sidebar-color);
     padding: 10px;
+
+}
+.sidebar-main-menu, 
+.sidebar-miscellaneous-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1%;
+    margin-top: 20%;
+}
+.sidebar-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+}
+.sidebar-icon img{
+    height: 100%;
+}
+.sidebar-header .sidebar-title{
+    line-height: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+    margin-left: 15px;
+}
+.sidebar-miscellaneous-menu{
+    margin-bottom: 40vh;
 }
 .main-content{
     grid-row: 2 / -1;
     grid-column: 2 / -1;
     background-color: var(--main-content-color);
+}
+
+/* Button styling */
+
+.btn{
+    background-color: var(--sidebar-color);
+    border: none;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: royalblue;
 }
