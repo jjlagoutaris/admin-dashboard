@@ -4,13 +4,15 @@
 .main-content{
     grid-row: 2 / -1;
     grid-column: 2 / -1;
-    background-color: rgba(100, 200, 200, .7);
+    background-color: $main-content-color;
+    color: $card-text;
 }
 .projects-container{
     display: flex;
     flex-direction: column;
 }
 .title{
+    color: $sidebar-color;
     padding: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -20,9 +22,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: $projects;
 }
 .card{
-    border: 1px solid black;
+    border: 1px solid red;
 }
 .card p{
     font-weight: 300;

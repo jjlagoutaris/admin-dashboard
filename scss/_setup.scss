@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+$sidebar-color: #0B0C10;
+$sidebar-text: #66fcf1;
+$header-color: #66fcf1;  
+$main-content-color: white;
+$additional-color: #0B0C10;
+$title-color: #F9A826;
+$btnHoverColor: #ef476f;
+$projects: #0B0C10;
+$headerBtn: #edf5e1;
+$headerProfName: #0B0C10;
+$card-text: #c5c6c7;
+
+// $dark-blue: #05386B;
+// $light-green: #8ee4af;
+// $medium-green: #5cdb95;
+// $dark-green: #379683;
+// $text-color: #edf5e1;
