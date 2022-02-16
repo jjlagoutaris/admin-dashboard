@@ -1,0 +1,30 @@
+/* Main-content */
+
+
+.main-content{
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    background-color: rgba(100, 200, 200, .7);
+}
+.projects-container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.card{
+    border: 1px solid black;
+}
+.card p{
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
