@@ -136,13 +136,15 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #0B0C10;
 }
 
 .main-content .announcements-and-trending .announcements-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #0B0C10;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .main-content .announcements-and-trending .announcements-container .title {
@@ -160,13 +162,31 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
 }
 
 .main-content .announcements-and-trending .announcements-container .announcements .announcement {
+  padding: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   font-size: 18px;
+}
+
+.main-content .announcements-and-trending .announcements-container .announcements .announcement h3 {
+  color: #ef476f;
+}
+
+.main-content .announcements-and-trending .announcements-container .announcements .announcement p {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .main-content .announcements-and-trending .trending-container {
@@ -181,6 +201,7 @@ html {
 }
 
 .main-content .announcements-and-trending .trending-container .trending-topics {
+  width: 80%;
   background-color: white;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -193,12 +214,22 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
+  border-radius: 30px;
 }
 
 .main-content .announcements-and-trending .trending-container .trending-topics .trending-topic {
+  padding: 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr;
+      grid-template-columns: 1fr 6fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-content .announcements-and-trending .trending-container .trending-topics .trending-topic img {
@@ -212,7 +243,7 @@ html {
   color: white;
   padding: 10px;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -365,8 +396,9 @@ label img {
 }
 
 .btn.menu:hover {
-  color: white;
+  color: #66fcf1;
   background-color: #0B0C10;
+  border: 3px solid #ef476f;
 }
 
 .profile-name, .headerBtn {

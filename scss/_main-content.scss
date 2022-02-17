@@ -24,7 +24,7 @@
                 justify-content: space-evenly;
                 background-color: $card;
                 border-radius: 20px;
-                border-left: 10px solid $header-color;
+                border-left: 10px solid $card-side;
                 p{
                     font-size: 20px;
                     font-weight: 500;
@@ -41,9 +41,11 @@
     .announcements-and-trending{
         display: flex;
         flex-direction: column;
+        background-color: $sidebar-text;
         .announcements-container{
             flex: 1;
-            background-color: $headerProfName;
+            width: 80%;
+            margin: 0 auto;
             .title{
                 text-align: center;
             }
@@ -53,9 +55,21 @@
                 display: flex;
                 flex-direction: column;
                 background-color: $sidebar-color;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
                 .announcement{
+                    padding: 20px;
                     flex: 1;
                     font-size: 18px;
+                    h3{
+                        color: $card;
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -66,13 +80,20 @@
                 text-align: center;
             }
             .trending-topics{
+                width: 80%;
                 background-color: $sidebar-color;
                 flex: 1;
                 padding: 10px;
                 display: flex;
                 flex-direction: column;
+                margin: 0 auto;
+                border-radius: 30px;
                 .trending-topic{
+                    padding: 10px;
                     flex: 1;
+                    display: grid;
+                    grid-template-columns: 1fr 6fr;
+                    align-items: center;
                     img{
                         border: 5px solid $header-color;
                         height: 50px;
@@ -89,7 +110,7 @@
     color: $sidebar-color;
     padding: 10px;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
 }
 

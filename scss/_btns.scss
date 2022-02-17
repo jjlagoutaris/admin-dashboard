@@ -13,8 +13,9 @@
     background-color: $sidebar-color;    
     color: $sidebar-text;
     &:hover{
-        color: $sidebar-color;
+        color: $header-color;
         background-color: $sidebar-text;
+        border: 3px solid $card;
     }
 }
 
